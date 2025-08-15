@@ -1,25 +1,16 @@
 # Shortest Paths Finder (Floyd-Warshall Algorithm)
 
-This program reads a weighted directed graph from a file and computes the shortest paths between all pairs of vertices using the **Floyd-Warshall algorithm**. It outputs the distance matrix, path lengths, intermediate vertices, and detailed shortest path routes for every vertex pair.
+This compilation of code extends a character device driver and accesses kernel data structures. 
 
 ---
 
 ## Features
-- Reads graph data from a text file
-- Supports **up to 26 vertices** (`A` through `Z`)
-- Handles **infinite distances** for unreachable vertices
-- Validates input format and reports errors with line numbers
-- Displays:
-  - Distance matrix
-  - Path lengths
-  - Intermediate vertices
-  - Detailed paths for each vertex pair
+- Extend a character device driver, implemented as a kernel module, to implement a new IOCTL
+command in the driver. This new IOCTL command can be used to access a task_struct (task control
+block) inside the Linux kernel.
+- Extend a user space program to interact with the character device driver to test i
 
 ---
 
-## Input Format
-The input file must follow this structure:
-- **`<number_of_vertices>`**: integer between 1 and 26
-- **`<start_vertex>`** and **`<end_vertex>`**: single capital letters within the range of the vertices
-- **`<weight>`**: positive integer (edge weight)
+
 
